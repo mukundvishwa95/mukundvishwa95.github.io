@@ -364,13 +364,20 @@ frames cursor {
     .p1{
         display: block;
         position: relative;
-        left: 31%;
-        height: 30vw;
-        width: 30vw;
+        left: 15%;
+        height: 55vw;
+        width: 55vw;
     }
     .p1 img{
-        height:23vw;
-        width:30vw;
+        height:42vw;
+        width:50vw;
+    }
+    .p1 h1{
+        top:-1%;
+        font-size: 3vw;
+    }
+    .p1 h2{
+        font-size: 2.8vw;
     }
 }
 

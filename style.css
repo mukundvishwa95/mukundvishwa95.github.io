@@ -13,6 +13,7 @@
 
 html {
     font-size: 62%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -230,6 +231,7 @@ span {
     transform: scale(1.2)translateY(-5px);
     background-color: rgb(56, 54, 54);
     box-shadow: 0px 0px 5px silver;
+    
 }
 
 .btn {
@@ -273,12 +275,14 @@ span {
 }
 .title h1{
     font-size:5rem;
-    font-weight: 300;
+    font-weight: 700;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 .hiddentxt{
     opacity: 0;
     transform: translateY(70px);
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .show{
     opacity: 1;
@@ -291,12 +295,84 @@ span {
 .project{
     background-color: rgba(1, 1, 1, 0.712);
 }
+.collect{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:20px;
+}
+.p1{
+    display: inline;
+    margin-top: 100px;
+    height:25vw;
+    width:24vw;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius:10px;
+    align-content: center;
+    transition: 1s ease;
+    font-size: 0.8vw;
+    outline:1px solid rgba(255, 255, 255, 0.05);
+}
+.p1 img{
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(96, 119, 119, 0.568);
+    height:17vw;
+    width: 23vw;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(0.85) contrast(1.3) drop-shadow(0px 0px 10px rgba(1, 32, 32, 0.3));
+    opacity: 0.95;
+}
+.p1 img:hover{
+    transform:scale(1.02);
+    box-shadow: 0px 10px 20px rgba(77, 83, 83, 0.4);
+}
+.p1:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+.p1 h1{
+    color: #f2f2f2;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 2px;
+    position:relative;
+    bottom: 3%;
+    text-transform: uppercase;
+
+}
+
+.p1 h2{
+    position:relative;
+    top:2%;
+    color:#ddd;
+}
 frames cursor {
     to {
         border-left: 3px solid black;
     }
 }
 
+
+@media (max-width:1000px){
+    .collect{
+        display: inline-block;
+        align-items: center;
+    }
+    .p1{
+        display: block;
+        position: relative;
+        left: 31%;
+        height: 30vw;
+        width: 30vw;
+    }
+    .p1 img{
+        height:23vw;
+        width:30vw;
+    }
+}
 
 @media (max-width:1000px) {
     .home {

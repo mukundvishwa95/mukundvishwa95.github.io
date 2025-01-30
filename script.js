@@ -65,3 +65,4 @@ const observer = new IntersectionObserver((entries)=>{
 
 const hiddentxt = document.querySelectorAll('.hiddentxt');
 hiddentxt.forEach((txt)=> observer.observe(txt));
+

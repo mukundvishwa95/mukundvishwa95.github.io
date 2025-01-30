@@ -379,6 +379,9 @@ frames cursor {
     .p1 h2{
         font-size: 2.8vw;
     }
+    .collect{
+        gap:5px;
+    }
 }
 
 @media (max-width:1000px) {

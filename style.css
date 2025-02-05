@@ -349,6 +349,47 @@ span {
     top:2%;
     color:#ddd;
 }
+
+svg{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+text{
+    fill: rgb(31, 30, 30);
+    font-size: 2.3rem;
+    transition: all 5s ease-in-out;
+    display: block;
+}
+#stitle{
+    font-size:9rem;
+    font-weight: 500;
+    color: #201f1f;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+line {
+    stroke: black;
+    stroke-width: 2px;
+    transition: all 10s ease-in;
+}
+
+.skillset{
+    border:2px solid silver;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+                -2px -2px 5px rgba(255, 255, 255, 0.2);
+
+}
+
+.skillset:hover text{
+    fill:rgb(194, 189, 189);
+}
+.skillset:hover line{
+    stroke: rgb(36, 34, 34);
+}
 frames cursor {
     to {
         border-left: 3px solid black;
@@ -435,3 +476,13 @@ frames cursor {
         scale: 1;
     }
 }
+
+@keyframes move {
+    from{
+        left:100%;
+    }
+    to{
+        left: calc(var(--width)*-1);
+    }
+}
+

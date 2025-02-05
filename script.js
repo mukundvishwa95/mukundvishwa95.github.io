@@ -66,3 +66,27 @@ const observer = new IntersectionObserver((entries)=>{
 const hiddentxt = document.querySelectorAll('.hiddentxt');
 hiddentxt.forEach((txt)=> observer.observe(txt));
 
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section");
+    const links = document.querySelectorAll("nav a");
+
+    function updateActiveLink() {
+        let currentSection = sections[0].getAttribute("id");
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (scrollY >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+        links.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(currentSection)) {
+                link.classList.add("active");
+            }
+        });
+    }
+    window.addEventListener("scroll", updateActiveLink);
+});

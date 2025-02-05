@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="script.js"></script>
 </head>
 
@@ -14,9 +15,9 @@
     <header>
         <a href="#" class="logo">M U K U N D V I S H W A K A R M A</a>
         <nav class="desktop">
-            <a href="#" class="active">Home</a>
-            <a href="#target1">Projects</a>
-            <a href="#">Skills</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#">Experience</a>
             <a href="#">Education</a>
             <a href="#">Contact</a>
@@ -24,16 +25,16 @@
         <div class="dropdown">
             <button id='dropdownbtn' class='dropbtn'><i class="fa-solid fa-bars hamburg"></i></button>
             <div id="dropdowncontent" class="dropdown-content">
-                <a href="#">Home</a>
-                <a href="#target1">Projects</a>
-                <a href="#">Skills</a>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
                 <a href="#">Experience</a>
                 <a href="#">Education</a>
                 <a href="#">Contact</a>
             </div>
         </div>
     </header>
-    <section class='home'>
+    <section class='home' id="home">
         <div class="homeing">
             <img src="home.jpg" alt="">
         </div>
@@ -48,14 +49,14 @@
             <div class="social_icons">
                 <a href="https://linkedin.com/in/mukund-vishwakarma"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/mukundvishwa95"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://x.com/mukundvishwa785"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
             <a href="#" class="btn">Hire Me!</a>
         </div>
     </section>
     <hr class="line">
-    <section id="target1" class="project">
+    <section id="projects" class="project">
         <div class="hiddentxt">
             <div class="title">
                 <h1>PROJECTS</h1>
@@ -80,6 +81,56 @@
         </div>
 
     </section>
+    <hr class="line">
+    <section class="skills" id="skills">
+        <div class="hiddentxt">
+        <div class="title">
+            <h1>SKILLS</h1>
+        </div>
+        <div class="skillset">
+            <svg width="100%" height="100%" viewBox="0 0 1080 1200" preserveAspectRatio="xMidYMid meet">
+                <!-- Cybersecurity -->
+                <text id="stitle" x="20%" y="6%">Cybersecurity</text>
+        
+                <text x="10%" y="16%">Linux</text>
+                <text x="22%" y="16%">SEIM TOOLS</text>
+                <text x="40%" y="16%">WAPT</text>
+                <text x="55%" y="16%">Network Security</text>
+                <text x="78%" y="16%">Offensive Security</text>
+        
+                <line x1="50%" y1="8%" x2="50%" y2="25%" stroke="black" stroke-width="2"></line>
+        
+                <!-- Programming -->
+                <text id="stitle" x="20%" y="31%">Programming</text>
+        
+                <text x="10%" y="42%">Python</text>
+                <text x="37%" y="42%">Java</text>
+                <text x="60%" y="42%">C</text>
+                <text x="83%" y="42%">C++</text>
+        
+                <line x1="50%" y1="50%" x2="50%" y2="33%" stroke="black" stroke-width="2"></line>
+        
+                <!-- Networking -->
+                <text id="stitle" x="25%" y="56%">Networking</text>
+        
+                <text x="10%" y="67%">TCP/IP</text>
+                <text x="37%" y="67%">Firewall</text>
+                <text x="60%" y="67%">Ports & Protocols</text>
+                <text x="83%" y="67%">Packet Analysis</text>
+        
+                <line x1="50%" y1="75%" x2="50%" y2="58%" stroke="black" stroke-width="2"></line>
+        
+                <!-- Miscellaneous -->
+                <text id="stitle" x="20%" y="81%">Miscellaneous</text>
+        
+                <text x="10%" y="92%">MERN STACK</text>
+                <text x="37%" y="92%">Web Designing</text>
+                <text x="60%" y="92%">Automation</text>
+                <text x="83%" y="92%">Database</text>
+            </svg>
+        </div>
+    </section>
+    
 </body>
 
 </html>

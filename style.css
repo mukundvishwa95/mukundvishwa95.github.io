@@ -480,10 +480,10 @@ br{
 }
 @media (max-width:700px){
     .card{
-        height: 39vw;
+        height: 50vw;
     }
     .card img{
-        height: 28vw;
+        height: 33vw;
     }
     .card p{
         font-size: 1.2vw;

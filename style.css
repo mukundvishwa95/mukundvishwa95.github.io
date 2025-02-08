@@ -510,6 +510,9 @@ br{
         height: 40vw;
         width: 80vw;
     }
+    .card p{
+        font-size: 1.5vw;
+    }
 }
 @media (max-width:1000px){
     .collect{

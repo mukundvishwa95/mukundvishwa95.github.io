@@ -501,7 +501,16 @@ br{
         width: 60vw;
     }
 }
-
+@media(max-width:500px){
+    .card{
+        height: 58vw;
+        width: 80vw;
+    }
+    .card img{
+        height: 40vw;
+        width: 80vw;
+    }
+}
 @media (max-width:1000px){
     .collect{
         display: inline-block;

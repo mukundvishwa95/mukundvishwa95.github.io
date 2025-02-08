@@ -396,6 +396,8 @@ frames cursor {
     }
 }
 
+
+
 .detail{
     margin-top: 50px;
 }
@@ -511,7 +513,7 @@ br{
         width: 80vw;
     }
     .card p{
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
 }
 @media (max-width:1000px){

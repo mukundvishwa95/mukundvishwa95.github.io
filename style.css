@@ -192,7 +192,9 @@ span {
 .home-content p {
     font-size: 1.6rem;
 }
-
+.home-content p b{
+    font-weight: 600;
+}
 .homeing {
     border-radius: 50%;
     border: 1px white solid;
@@ -352,6 +354,14 @@ span {
     position:relative;
     top:2%;
     color:#ddd;
+}
+
+.p1:hover ~ .p1, .p1:hover ~ .p1 ~ .p1{
+    opacity: 0.2;
+}
+
+.collect:hover .p1:not(:hover){
+    opacity: 0.2;
 }
 
 svg{
@@ -514,7 +524,7 @@ br{
 .fgroup input, .fgroup textarea{
     width: 100%;
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #000;
     background: #d4cdcd;
     border: 1 px solid #ccc;

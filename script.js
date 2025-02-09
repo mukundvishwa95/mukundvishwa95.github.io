@@ -1,9 +1,7 @@
 const text =[
-    "Hacker",
-    "Developer",
-    "Red Teammer",
-    "CS Teacher",
-    "Web Designer"
+    "Student",
+    "Cyber Security Aspirant",
+    "Bug Hunter"
 ]
 
 let speed =100;

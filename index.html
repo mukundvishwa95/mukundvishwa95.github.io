@@ -20,7 +20,7 @@
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
         <div class="dropdown">
             <button id='dropdownbtn' class='dropbtn'><i class="fa-solid fa-bars hamburg"></i></button>
@@ -30,7 +30,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </header>
@@ -40,7 +40,7 @@
         </div>
         <div class="home-content">
             <h1>Hi It's <span>Mukund</span></h1>
-            <div class="typewritter">
+            <div class="typewritter" id = "now-active">
                 <h3>I'm a <span class="typewritter-text"></span><label for=""></label> </h3>
             </div>
             <p>I'm Mukund Vishwakarma, a hacker, developer, web designer, CS teacher, and red teamer. My passion for
@@ -115,7 +115,7 @@
         
                 <text x="10%" y="67%">TCP/IP</text>
                 <text x="37%" y="67%">Firewall</text>
-                <text x="55%" y="62%">Ports & Protocols</text>
+                <text x="55%" y="67%">Ports & Protocols</text>
                 <text x="80%" y="67%">Packet Analysis</text>
         
                 <line x1="50%" y1="75%" x2="50%" y2="58%" stroke="black" stroke-width="2"></line>
@@ -156,7 +156,7 @@
         </div>
         </div>
     </section>
-    <hr class="line">
+    <hr class="line" id="sline">
     <section class="education" id="education">
       <div class="hiddentxt">
         <div class="title">
@@ -182,6 +182,35 @@
         </div>
         </div>
       </div>
+    </section>
+    <hr class="line">
+    <section class="contact" id="contact">
+        <div class="hiddentxt">
+          <div class="title">
+              <h1>Contact Form</h1>
+          </div>
+          <form action="https://formspree.io/f/mgvozrag" method="POST" class="cform">
+            <div class="fgroup">
+                <label for="name">Your Name</label>
+                <input type="text" id="uname" name="name" placeholder="Please Input Your Name" required>
+            </div>
+            <div class="fgroup">
+                <label for="email">Your Email</label>
+                <input type="email" id="uemail" name="email" placeholder="Please Input Your Email" required>
+            </div>
+            <div class="fgroup">
+                <label for="name">Your Message</label>
+                <textarea id="umessage" name="message" placeholder="I am utilizing a 3rd party service for this form, so please do not provide any information you consider sensitive." required></textarea>
+            </div>
+            <button type="submit" class="fbtn">Send</button>
+          </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="text">
+            <p>&copy; 2025 <a href="mukundvishwa95.github.io">Mukund Vishwakarma.</a> All rights reserved.</p>
+        </div>
+    </footer>    
 </body>
 
 </html>

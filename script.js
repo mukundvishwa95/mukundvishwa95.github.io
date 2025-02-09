@@ -69,6 +69,7 @@ hiddentxt.forEach((txt)=> observer.observe(txt));
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const links = document.querySelectorAll("nav a");
+    const statusElement = document.getElementById("now-active");
 
     function updateActiveLink() {
         let currentSection = sections[0].getAttribute("id");
@@ -87,6 +88,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.classList.add("active");
             }
         });
+        if (currentSection === "home") {
+            statusElement.id = "now-active";
+        } else {
+            statusElement.id = "now-deactive";
+        }
     }
     window.addEventListener("scroll", updateActiveLink);
 });

@@ -269,6 +269,9 @@ span {
     font-size: 2.8rem;
     animation: cursor 0.9s infinite;
 }
+#now-deactive{
+    display: none;
+}
 .title{
     justify-content: center;
     text-align: center;
@@ -302,6 +305,7 @@ span {
     gap:20px;
 }
 .p1{
+    overflow: hidden;
     display: inline;
     margin-top: 100px;
     height:25vw;
@@ -326,7 +330,7 @@ span {
     opacity: 0.95;
 }
 .p1 img:hover{
-    transform:scale(1.02);
+    transform:scale(1.03);
     box-shadow: 0px 10px 20px rgba(77, 83, 83, 0.4);
 }
 .p1:hover{
@@ -378,6 +382,9 @@ line {
 
 .skillset{
     border:2px solid silver;
+    margin-top: 5vw;
+    height: 90vw;
+    width: 80vw;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
                 -2px -2px 5px rgba(255, 255, 255, 0.2);
@@ -480,7 +487,103 @@ br{
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
     border-left: 2px solid rgb(182, 67, 67);
 }
+
+.cform{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background:rgba(29, 28, 28, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fgroup{
+    margin-bottom: 20px;
+}
+
+.fgroup label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.fgroup input, .fgroup textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.8rem;
+    color: #000;
+    background: #d4cdcd;
+    border: 1 px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.fgroup textarea{
+    height: 150px;
+}
+
+.fgroup input:focus, .fgroup textarea:focus{
+    border-color: #f39c12;
+}
+
+.fbtn{
+    background: linear-gradient(45deg, #ff8c00, #ffca28); /* Warm gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.4);
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.6s ease-in-out;
+}
+
+.fbtn:hover{
+    background: #d87c0c;
+}
+
+.footer{
+    text-align: center;
+    background-color: #201f1f;
+    padding: 5px;
+}
+
 @media (max-width:700px){
+    .collect{
+        align-items: center;
+        justify-content: space-evenly;
+        gap:10px;
+    }
+    .p1{
+        display: block;
+        position: relative;
+        left: 15%;
+        height: 55vw;
+        width: 55vw;
+        margin-top: 5%;
+    }
+    .p1 img{
+        height:42vw;
+        width:50vw;
+    }
+    .p1 h1{
+        top:-1%;
+        font-size: 3vw;
+    }
+    .p1 h2{
+        font-size: 2.8vw;
+    }
+    .skillset{
+        height: 101vw;
+    }
+    svg{
+        margin-top: 1vw;
+    }
     .card{
         height: 50vw;
     }
@@ -502,6 +605,9 @@ br{
         height: 40vw;
         width: 60vw;
     }
+    #sline{
+        margin-top: -25vw;
+    }
 }
 @media(max-width:500px){
     .card{
@@ -515,32 +621,32 @@ br{
     .card p{
         font-size: 1.8vw;
     }
+    #sline{
+        margin-top: -73vw;
+    }
 }
-@media (max-width:1000px){
+
+@media (max-width:1200px){
     .collect{
-        display: inline-block;
-        align-items: center;
+        display: block;
+        justify-content: space-between;
     }
     .p1{
         display: block;
         position: relative;
-        left: 15%;
-        height: 55vw;
-        width: 55vw;
+        left: 12%;
+        height: 56vw;
+        width: 60vw;
     }
     .p1 img{
-        height:42vw;
-        width:50vw;
+        height: 40vw;
+        width: 59.9vw;
     }
     .p1 h1{
-        top:-1%;
         font-size: 3vw;
     }
     .p1 h2{
         font-size: 2.8vw;
-    }
-    .collect{
-        gap:5px;
     }
 }
 
@@ -581,6 +687,18 @@ br{
 
     #bar {
         font-size: 5vw;
+    }
+}
+
+@media (max-width:398px){
+    .skillset{
+        height: 100vw;
+    }
+    svg{
+        margin-top: 1.5vw;
+    }
+    #sline{
+        margin-top: -55vw;
     }
 }
 
